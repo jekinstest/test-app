@@ -1,0 +1,5 @@
+---
+- hosts: kcr_dev
+  tasks:
+    - import_tasks: ../playbook_tasks.yml
+
