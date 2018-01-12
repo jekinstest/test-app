@@ -1,0 +1,7 @@
+---
+- hosts: kcr_dev
+#  remote_user: zfall
+  tasks:
+    - name: Stop applicatiom {{app_dir}}/start.sh
+      shell: "{{app_dir}}/stop.sh"
+      ignore_errors: yes

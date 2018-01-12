@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pid_file="config/test.pid"
+pid_file="/opt/test/config/test.pid"
 
 stop_app() {
 	echo "Stopping application... (pid=$1)"

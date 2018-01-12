@@ -1,6 +1,6 @@
 ---
 - hosts: kcr_dev
-  remote_user: zfall
+#  remote_user: zfall
   tasks:
     - name: Stop application
       shell: "{{app_dir}}/stop.sh"
