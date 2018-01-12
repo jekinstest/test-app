@@ -20,7 +20,7 @@ public class TestREST {
 
     @RequestMapping
     public String test2() {
-        return "Select an ID!";
+        return "Select an ID 2!";
     }
 
     @RequestMapping(value = "property")
