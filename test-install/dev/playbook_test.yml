@@ -21,7 +21,7 @@
         ['start.sh', 'stop.sh', 'info.sh']
     - name: Copy application.properties
       template: src="./application.properties" dest={{ app_dir }}/config/application.properties
-    - name: Copy jar name: {{jarName}}
+    - name: Copy jar name - "{{ jarName }}"
       copy: src="{{jarName}}" dest={{ app_dir }}
     - name: Set file permissions
       file: dest={{app_dir}}/{{item}} mode=755
